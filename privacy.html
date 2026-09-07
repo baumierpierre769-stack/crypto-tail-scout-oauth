@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — crypto-tail-scout-rclone</title>
+  <style>
+    body { max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; font: 17px/1.6 system-ui, sans-serif; color: #202124; }
+    h1, h2 { line-height: 1.25; }
+    code { background: #f1f3f4; padding: .15rem .35rem; border-radius: .25rem; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>Application:</strong> crypto-tail-scout-rclone</p>
+    <p><strong>Effective date:</strong> September 7, 2026</p>
+
+    <h2>Purpose and users</h2>
+    <p>
+      crypto-tail-scout-rclone is a personal OAuth client used by one owner.
+      Its sole purpose is to back up and restore the owner's
+      <em>crypto-tail-scout</em> research datasets between the owner's computer
+      and the owner's private Google Drive through rclone. It is not offered as
+      a service to third parties.
+    </p>
+
+    <h2>Google data accessed</h2>
+    <p>
+      The client requests only
+      <code>https://www.googleapis.com/auth/drive.file</code>. This scope allows
+      it to create, read, update, and delete only Google Drive files and folders
+      it creates or that are explicitly opened with it. It does not request
+      access to unrelated Drive files, Gmail, Google Photos, contacts, profile
+      data, or other Google services.
+    </p>
+    <p>
+      The planned backup workflow uses versioned copy operations and does not
+      automatically synchronize remote deletions. Rclone retains the technical
+      ability to delete files created by this client when the owner explicitly
+      requests such an operation.
+    </p>
+
+    <h2>Data flow and storage</h2>
+    <p>
+      Backup files originate on the owner's computer and travel directly
+      between rclone on that computer and Google Drive through the official
+      Google Drive API. There is no independent application server or database.
+      OAuth credentials and tokens are stored only in rclone's local
+      configuration and are not uploaded to this website or its public
+      repository.
+    </p>
+    <p>
+      This static disclosure website does not receive Google user data. It is
+      hosted by GitHub Pages, so ordinary website request information may be
+      processed by GitHub under the
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
+        GitHub General Privacy Statement
+      </a>.
+    </p>
+
+    <h2>Sharing and secondary use</h2>
+    <p>
+      Google user data is not sold, transferred, used for advertising, or
+      disclosed to third parties. Backup files remain private in the owner's
+      Drive unless the owner independently changes their Drive sharing
+      settings. Google user data is not used for surveillance, credit,
+      advertising, or any purpose unrelated to personal backup and restoration.
+    </p>
+
+    <h2>Retention, deletion, and revocation</h2>
+    <p>
+      The owner controls retention and may delete backup files through Google
+      Drive or rclone. The owner may revoke the client's access at any time from
+      the Google Account's third-party access settings and may remove the local
+      rclone configuration and tokens.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      The client uses Google's OAuth 2.0 authorization flow and HTTPS through
+      rclone. Credentials are kept out of the public repository and project
+      datasets. Access is limited to the minimum <code>drive.file</code> scope.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      This policy will be updated before the client requests broader Google
+      access or uses Google user data for a new purpose. Any such change would
+      require renewed informed consent.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this personal client may be submitted through the
+      <a href="https://github.com/baumierpierre769-stack/crypto-tail-scout-oauth/issues">
+        repository issue tracker
+      </a>.
+    </p>
+
+    <p><a href="index.html">Return to the application page</a>.</p>
+  </main>
+</body>
+</html>
